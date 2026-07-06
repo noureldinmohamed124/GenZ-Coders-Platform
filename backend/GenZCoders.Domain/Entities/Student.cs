@@ -13,15 +13,14 @@ namespace GenZCoders.Domain.Entities
 
         public int UserId { get; set; }
 
-        public DateTime DoB { get; set; }
+        public DateOnly DoB { get; set; }
 
-        public string Grade { get; set; } = string.Empty;
         public string City { get; set; } = string.Empty;
 
         public EducationLevel EducationLevel { get; set; }
 
         public string InstitutionName { get; set; } = string.Empty;
-        public string AcademicLevel { get; set; } = string.Empty;
+        public string CurrentLevel { get; set; } = string.Empty;
         public string Faculty { get; set; } = string.Empty;
 
         public GraduationStatus GraduationStatus { get; set; }
@@ -29,6 +28,7 @@ namespace GenZCoders.Domain.Entities
         public decimal CreatorMindsetScore { get; set; }
 
         public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
 
 
         public User User { get; set; } = null!;

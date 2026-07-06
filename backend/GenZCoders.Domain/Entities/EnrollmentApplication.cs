@@ -24,7 +24,7 @@ namespace GenZCoders.Domain.Entities
 
         public string InstitutionName { get; set; } = string.Empty;
 
-        public string AcademicLevel { get; set; } = string.Empty;
+        public string CurrentLevel { get; set; } = string.Empty;
 
         public string Faculty { get; set; } = string.Empty;
 
@@ -47,6 +47,7 @@ namespace GenZCoders.Domain.Entities
         public DateTime? ReviewedAt { get; set; }
 
         public int? ReviewedByUserId { get; set; }
+        public User? ReviewedByUser { get; set; }
 
         public string? Notes { get; set; }
 

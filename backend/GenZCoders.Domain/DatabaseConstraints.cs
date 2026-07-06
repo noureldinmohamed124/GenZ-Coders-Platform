@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenZCoders.Shared.Constants
+namespace GenZCoders.Domain
 {
     public static class DatabaseConstraints
     {
@@ -20,6 +20,7 @@ namespace GenZCoders.Shared.Constants
         public const int InstitutionNameMaxLength = 200;
         public const int FacultyMaxLength = 150;
         public const int AcademicLevelMaxLength = 100;
+        public const int CurrentLevelMaxLength = 50;
 
         // Course
         public const int TitleMaxLength = 150;

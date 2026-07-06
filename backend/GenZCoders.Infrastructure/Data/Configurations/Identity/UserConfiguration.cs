@@ -1,4 +1,5 @@
-﻿using GenZCoders.Domain.Entities;
+﻿using GenZCoders.Domain;
+using GenZCoders.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GenZCoders.Infrastructure.Data.Configurations
+namespace GenZCoders.Infrastructure.Data.Configurations.Identity
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {
@@ -64,34 +65,11 @@ namespace GenZCoders.Infrastructure.Data.Configurations
             builder.Property(x => x.IsEmailVerified)
                 .HasDefaultValue(false);
 
-            builder.Property(x => x.CreatedAt)
-                .HasDefaultValueSql("GETUTCDATE()");
-
             builder.HasIndex(x => x.Email)
                 .IsUnique();
 
             builder.HasIndex(x => x.PhoneNumber)
                 .IsUnique();
-
-            builder.HasOne(x => x.Student)
-                .WithOne(x => x.User)
-                .HasForeignKey<Student>(x => x.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder.HasOne(x => x.Admin)
-                .WithOne(x => x.User)
-                .HasForeignKey<Admin>(x => x.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder.HasOne(x => x.EngineerInstructor)
-                .WithOne(x => x.User)
-                .HasForeignKey<Instructor>(x => x.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder.HasMany(x => x.RefreshTokens)
-                .WithOne(x => x.User)
-                .HasForeignKey(x => x.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

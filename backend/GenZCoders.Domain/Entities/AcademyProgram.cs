@@ -23,5 +23,9 @@ namespace GenZCoders.Domain.Entities
         public bool IsPublished { get; set; }
 
         public ICollection<Course> Courses { get; set; } = new List<Course>();
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
     }
 }
