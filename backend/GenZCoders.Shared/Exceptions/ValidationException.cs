@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenZCoders.Shared.Exceptions
 {
-    public sealed class ValidationException : Exception
+    public sealed class ValidationException : AppException
     {
         public Dictionary<string, string[]> Errors { get; set; }
 

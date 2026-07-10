@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenZCoders.Shared.Exceptions
 {
-    public sealed class ForbiddenException : Exception
+    public sealed class ForbiddenException : AppException
     {
         public ForbiddenException(string message) : base(message) { }
     }

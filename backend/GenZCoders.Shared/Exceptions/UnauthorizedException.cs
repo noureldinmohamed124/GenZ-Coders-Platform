@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GenZCoders.Shared.Exceptions
 {
-    internal class UnauthorizedException : Exception
+    public sealed class UnauthorizedException : AppException
     {
-
+        public UnauthorizedException(string message) : base(message) { }
     }
 }

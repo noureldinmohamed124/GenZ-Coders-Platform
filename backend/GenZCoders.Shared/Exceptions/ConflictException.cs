@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenZCoders.Shared.Exceptions
 {
-    public sealed class ConflictException : Exception
+    public sealed class ConflictException : AppException
     {
         public ConflictException(string message) : base(message) { }
     }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GenZCoders.Shared.Exceptions
 {
-    public sealed class NotFoundException : AppException
+    public abstract class AppException : Exception
     {
-        public NotFoundException(string message) : base(message) { }
+        protected AppException(string message) : base(message) { }
     }
 }
