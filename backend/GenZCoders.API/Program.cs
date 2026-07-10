@@ -78,5 +78,7 @@ app.Run();
     Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 8.0.20 (Infrastructure)
  
     Install-Package Microsoft.EntityFrameworkCore -Version 8.0.20 ()
+
+    Install-Package FluentValidation -Version 12.1.0 (Application)
  
 */
