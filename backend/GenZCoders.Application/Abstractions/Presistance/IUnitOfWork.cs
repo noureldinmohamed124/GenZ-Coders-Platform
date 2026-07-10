@@ -9,5 +9,7 @@ namespace GenZCoders.Application.Abstractions.Presistance
     public interface IUnitOfWork
     {
         Task SaveChangesAsync(CancellationToken ct = default);
+
+        Task BeginTransactionAsync(CancellationToken cancellationToken = default);
     }
 }
