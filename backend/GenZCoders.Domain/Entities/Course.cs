@@ -40,5 +40,10 @@ namespace GenZCoders.Domain.Entities
         public CourseStatus Status { get; set; }
 
         public AcademyProgram Program { get; set; } = null!;
+
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
     }
 }

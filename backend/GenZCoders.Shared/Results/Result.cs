@@ -9,7 +9,6 @@ namespace GenZCoders.Shared.Results
     public sealed class Result
     {
         public bool IsSuccess { get; init; }
-
         public string? Error { get; init; }
 
         public static Result Success()
