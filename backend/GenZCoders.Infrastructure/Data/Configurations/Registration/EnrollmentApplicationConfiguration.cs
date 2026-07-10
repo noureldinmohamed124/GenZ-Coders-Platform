@@ -51,6 +51,7 @@ namespace GenZCoders.Infrastructure.Data.Configurations.Registration
 
             builder.Property(x => x.Faculty)
                 .HasMaxLength(DatabaseConstraints.FacultyMaxLength)
+                .IsRequired(false)
                 .IsUnicode();
 
             builder.Property(x => x.GraduationStatus)

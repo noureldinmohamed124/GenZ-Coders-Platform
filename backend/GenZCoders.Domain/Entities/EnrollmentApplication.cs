@@ -26,7 +26,7 @@ namespace GenZCoders.Domain.Entities
 
         public string CurrentLevel { get; set; } = string.Empty;
 
-        public string Faculty { get; set; } = string.Empty;
+        public string? Faculty { get; set; } = string.Empty;
 
         public GraduationStatus GraduationStatus { get; set; }
 
