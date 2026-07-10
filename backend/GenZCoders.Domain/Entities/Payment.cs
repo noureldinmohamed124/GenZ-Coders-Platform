@@ -16,6 +16,7 @@ namespace GenZCoders.Domain.Entities
         public decimal Amount { get; set; }
 
         public string ScreenshotUrl { get; set; } = string.Empty;
+        public string? TransactionReference { get; set; }
 
         public PaymentStatus Status { get; set; }
 
@@ -24,6 +25,7 @@ namespace GenZCoders.Domain.Entities
         public DateTime? VerifiedAt { get; set; }
 
         public int? VerifiedByUserId { get; set; }
+        public User? VerifiedByUser { get; set; }
 
         public string? Notes { get; set; }
 

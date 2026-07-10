@@ -19,9 +19,8 @@ namespace GenZCoders.Domain.Entities
 
         public int? Age { get; set; }
 
-        public string CurrentEducationLevel { get; set; } = null!;
+        public string EducationLevel { get; set; } = null!;
 
-        public int? InterestedProgramId { get; set; }
 
         public DateOnly PreferredMeetingDate { get; set; }
 
@@ -31,7 +30,12 @@ namespace GenZCoders.Domain.Entities
 
         public ConsultationStatus Status { get; set; }
 
+
+        public int? InterestedProgramId { get; set; }
+        public AcademyProgram? InterestedProgram { get; set; }
+
         public int? AssignedInstructorId { get; set; }
+        public Instructor? AssignedInstructor { get; set; }
 
         public string? MeetingLink { get; set; }
 
