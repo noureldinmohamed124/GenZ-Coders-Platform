@@ -1,9 +1,53 @@
+﻿using GenZCoders.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+
+// 1. DbContext
+builder.Services.AddDbContext<GenZDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AspTest")));
+
+
+// 2. Repositories
+
+
+// 3. Services
+
+
+// 4. Use Cases
+
+
+// 5. JWT Configurations
+
+
+
+// force lowercase URLs
+builder.Services.AddRouting(options =>
+{
+    options.LowercaseUrls = true;
+});
+
+
+
+// When converting enums to/from JSON → use names instead of numbers
+builder.Services
+    .AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters
+            .Add(new JsonStringEnumConverter());
+    });
+
+
+
+
+// Swagger (optional)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -29,7 +73,10 @@ app.Run();
 
 /*
  
-Install-Package Microsoft.EntityFrameworkCore -Version 8.0.20 (Infrastructure) 
+    Install-Package Microsoft.EntityFrameworkCore -Version 8.0.20 (Infrastructure)
+    Install-Package Microsoft.EntityFrameworkCore.Tools -Version 8.0.20 (Infrastructure)
+    Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 8.0.20 (Infrastructure)
  
+    Install-Package Microsoft.EntityFrameworkCore -Version 8.0.20 ()
  
 */
