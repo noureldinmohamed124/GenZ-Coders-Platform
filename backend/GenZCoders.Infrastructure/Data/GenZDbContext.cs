@@ -10,6 +10,8 @@ namespace GenZCoders.Infrastructure.Data
 {
     public class GenZDbContext : DbContext
     {
+        public GenZDbContext(DbContextOptions options) : base(options) { }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

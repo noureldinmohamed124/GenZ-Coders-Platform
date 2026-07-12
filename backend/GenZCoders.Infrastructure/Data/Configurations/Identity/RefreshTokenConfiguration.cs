@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace GenZCoders.Infrastructure.Data.Configurations.Identity
 {
-    internal class RefreshTokenConfiguration : IEntityTypeConfiguration<RefreshToken>
-    {
-        public void Configure(EntityTypeBuilder<RefreshToken> builder)
-        {
-            throw new NotImplementedException();
-        }
-    }
+    //internal class RefreshTokenConfiguration : IEntityTypeConfiguration<RefreshToken>
+    //{
+    //    public void Configure(EntityTypeBuilder<RefreshToken> builder)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
 }

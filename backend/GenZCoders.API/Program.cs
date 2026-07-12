@@ -1,4 +1,6 @@
-﻿using GenZCoders.Infrastructure;
+﻿using GenZCoders.API.Middlewares;
+using GenZCoders.Application.Modules.EnrollmentApplications.Commands.CreateEnrollmentApplication;
+using GenZCoders.Infrastructure;
 using GenZCoders.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
@@ -15,14 +17,13 @@ builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, relo
 
 
 
-// 2. Repositories
+// Repositories
 builder.Services.AddInfrastructure(builder.Configuration);
 
 
-// 3. Services
 
-
-// 4. Use Cases
+// Use Cases
+builder.Services.AddScoped<CreateEnrollmentApplicationUseCase>();
 
 
 // 5. JWT Configurations
@@ -62,6 +63,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<GlobalExceptionMiddleware>();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -84,5 +87,7 @@ app.Run();
     Install-Package Microsoft.EntityFrameworkCore -Version 8.0.20 ()
 
     Install-Package FluentValidation -Version 12.1.0 (Application)
+
+    Install-Package Microsoft.EntityFrameworkCore.Design -Version 8.0.20 (Api)
  
 */

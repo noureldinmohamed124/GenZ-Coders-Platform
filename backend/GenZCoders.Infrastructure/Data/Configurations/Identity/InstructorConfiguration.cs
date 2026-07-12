@@ -13,7 +13,9 @@ namespace GenZCoders.Infrastructure.Data.Configurations.Identity
     {
         public void Configure(EntityTypeBuilder<Instructor> builder)
         {
-            throw new NotImplementedException();
+            builder.Property(i => i.Bio)
+                .HasMaxLength(5000)
+                .IsUnicode(true);
         }
     }
 }

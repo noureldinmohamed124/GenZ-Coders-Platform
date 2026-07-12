@@ -19,8 +19,7 @@ namespace GenZCoders.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             // DbContext
-            services.AddDbContext<GenZDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("AspTest")));
+            services.AddDbContext<GenZDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("AspTest")));
 
             // Repositories
             services.AddScoped(typeof(IGenericRepo<>),typeof(GenericRepo<>));
