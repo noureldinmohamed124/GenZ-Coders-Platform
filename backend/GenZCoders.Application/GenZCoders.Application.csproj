@@ -7,8 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\" />
-    <Folder Include="Abstractions\" />
+    <Folder Include="Abstractions\Security\" />
+    <Folder Include="Modules\EnrollmentApplications\Queries\" />
+    <Folder Include="Modules\Authentication\" />
+    <Folder Include="Modules\Courses\" />
+    <Folder Include="Modules\Instructors\" />
+    <Folder Include="Modules\Users\" />
+    <Folder Include="Modules\Payments\" />
+    <Folder Include="Modules\Students\" />
+    <Folder Include="Modules\Programs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.0" />
   </ItemGroup>
 
   <ItemGroup>

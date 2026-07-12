@@ -29,6 +29,11 @@ namespace GenZCoders.Infrastructure.Data.Configurations.Registration
                 .HasMaxLength(DatabaseConstraints.UrlMaxLength)
                 .IsUnicode(false);
 
+            builder.Property(x => x.ScreenshotPublicId)
+                .IsRequired()
+                .HasMaxLength(DatabaseConstraints.UrlMaxLength)
+                .IsUnicode(false);
+
             builder.Property(x => x.Status)
                 .HasConversion<int>();
 
