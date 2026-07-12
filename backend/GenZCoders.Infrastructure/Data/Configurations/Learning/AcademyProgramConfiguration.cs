@@ -40,6 +40,11 @@ namespace GenZCoders.Infrastructure.Data.Configurations.Learning
             builder.Property(x => x.DisplayOrder)
                 .HasDefaultValue(0);
 
+            builder.Property(a => a.ThumbnailUrl)
+                .HasMaxLength(DatabaseConstraints.UrlMaxLength)
+                .IsRequired()
+                .IsUnicode(false);
+
             builder.Property(x => x.IsPublished)
                 .HasDefaultValue(false);
 

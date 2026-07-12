@@ -16,8 +16,8 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Admin\" />
-    <Folder Include="Controllers\Public\" />
     <Folder Include="Controllers\Student\" />
+    <Folder Include="Controllers\Instructor\" />
   </ItemGroup>
 
   <ItemGroup>

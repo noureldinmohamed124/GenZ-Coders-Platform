@@ -25,6 +25,7 @@ namespace GenZCoders.Infrastructure
             services.AddScoped(typeof(IGenericRepo<>),typeof(GenericRepo<>));
             services.AddScoped<ICourseRepo, CourseRepo>();
             services.AddScoped<IEnrollmentApplicationRepo, EnrollmentApplicationRepo>();
+            services.AddScoped<IAcademyProgramRepo, AcademyProgramRepo>();
 
             // UnitOfWork
             services.AddScoped<IUnitOfWork, UnitOfWork>();
