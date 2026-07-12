@@ -1,4 +1,5 @@
 ﻿using GenZCoders.API.Middlewares;
+using GenZCoders.Application.Modules.AcademyPrograms.Queries.GetAllAcademyPrograms;
 using GenZCoders.Application.Modules.EnrollmentApplications.Commands.CreateEnrollmentApplication;
 using GenZCoders.Infrastructure;
 using GenZCoders.Infrastructure.Data;
@@ -24,6 +25,7 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 // Use Cases
 builder.Services.AddScoped<CreateEnrollmentApplicationUseCase>();
+builder.Services.AddScoped<GetAllAcademyProgramsUseCase>();
 
 
 // 5. JWT Configurations

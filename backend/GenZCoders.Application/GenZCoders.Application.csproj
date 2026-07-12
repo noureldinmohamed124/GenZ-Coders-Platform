@@ -12,10 +12,10 @@
     <Folder Include="Modules\Authentication\" />
     <Folder Include="Modules\Courses\" />
     <Folder Include="Modules\Instructors\" />
+    <Folder Include="Modules\AcademyPrograms\Commands\" />
     <Folder Include="Modules\Users\" />
     <Folder Include="Modules\Payments\" />
     <Folder Include="Modules\Students\" />
-    <Folder Include="Modules\Programs\" />
   </ItemGroup>
 
   <ItemGroup>

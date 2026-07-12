@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace GenZCoders.Application.Abstractions.Presistance
 {
-    internal interface IAcademyProgramRepo : IGenericRepo<AcademyProgram>
+    public interface IAcademyProgramRepo : IGenericRepo<AcademyProgram>
     {
+        Task<IEnumerable<AcademyProgram>> GetAllAcademyProgramsAsync();
     }
 }

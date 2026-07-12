@@ -22,6 +22,8 @@ namespace GenZCoders.Domain.Entities
 
         public bool IsPublished { get; set; }
 
+        public string ThumbnailUrl { get; set; } = string.Empty;
+
         public ICollection<Course> Courses { get; set; } = new List<Course>();
 
         public DateTime CreatedAt { get; set; }
