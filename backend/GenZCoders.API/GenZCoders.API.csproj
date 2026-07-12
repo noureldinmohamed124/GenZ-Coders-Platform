@@ -11,8 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Middlewares\" />
+    <Folder Include="Controllers\Admin\" />
+    <Folder Include="Controllers\Public\" />
+    <Folder Include="Controllers\Student\" />
   </ItemGroup>
 
   <ItemGroup>

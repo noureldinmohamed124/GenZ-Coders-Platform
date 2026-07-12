@@ -1,4 +1,5 @@
-﻿using GenZCoders.Infrastructure.Data;
+﻿using GenZCoders.Infrastructure;
+using GenZCoders.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
@@ -9,12 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 
-// 1. DbContext
-builder.Services.AddDbContext<GenZDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AspTest")));
+// Load App Settings File
+builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
+
 
 
 // 2. Repositories
+builder.Services.AddInfrastructure(builder.Configuration);
 
 
 // 3. Services
@@ -76,6 +78,8 @@ app.Run();
     Install-Package Microsoft.EntityFrameworkCore -Version 8.0.20 (Infrastructure)
     Install-Package Microsoft.EntityFrameworkCore.Tools -Version 8.0.20 (Infrastructure)
     Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 8.0.20 (Infrastructure)
+    Install-Package CloudinaryDotNet -Version 1.29.0 (Infrastructure)
+    Install-Package Microsoft.Extensions.Options.ConfigurationExtensions -Version 9.0.0 (Infrastructure)
  
     Install-Package Microsoft.EntityFrameworkCore -Version 8.0.20 ()
 

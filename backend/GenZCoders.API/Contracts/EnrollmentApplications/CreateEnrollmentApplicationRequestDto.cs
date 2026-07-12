@@ -14,7 +14,7 @@ namespace GenZCoders.API.Contracts.EnrollmentApplications
 
         public AssessmentInfoDto Assessment { get; set; } = null!;
 
-        public PaymentRequestDto Payment { get; set; } = null!;
+        public IFormFile PaymentScreenshot { get; set; } = null!;
 
     }
 
@@ -61,10 +61,6 @@ namespace GenZCoders.API.Contracts.EnrollmentApplications
         public string? ProgrammingTools { get; set; }
 
         public string PrimaryGoal { get; set; } = string.Empty;
-    }
-    public class PaymentRequestDto
-    {
-        public IFormFile Screenshot { get; set; } = null!;
     }
 
 }
