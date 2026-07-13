@@ -8,9 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Abstractions\Security\" />
+    <Folder Include="Modules\Courses\Commands\" />
     <Folder Include="Modules\EnrollmentApplications\Queries\" />
     <Folder Include="Modules\Authentication\" />
-    <Folder Include="Modules\Courses\" />
     <Folder Include="Modules\Instructors\" />
     <Folder Include="Modules\AcademyPrograms\Commands\" />
     <Folder Include="Modules\Users\" />

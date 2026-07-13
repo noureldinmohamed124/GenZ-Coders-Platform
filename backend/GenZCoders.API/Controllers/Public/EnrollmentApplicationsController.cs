@@ -25,6 +25,7 @@ namespace GenZCoders.API.Controllers.User
             var command = new CreateEnrollmentApplicationCommand
             {
                 CourseId = dto.CourseId,
+                HasLaptopConfirmation = dto.HasLaptopConfirmation,
                 Student = new StudentInformation
                 {
                     FirstName = dto.Student.FirstName,

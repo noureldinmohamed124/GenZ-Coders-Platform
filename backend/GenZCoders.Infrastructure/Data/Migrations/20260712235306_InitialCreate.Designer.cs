@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GenZCoders.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(GenZDbContext))]
-    [Migration("20260712014801_Add Thumbnail Property to Academy Program Entity")]
-    partial class AddThumbnailPropertytoAcademyProgramEntity
+    [Migration("20260712235306_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -181,7 +181,7 @@ namespace GenZCoders.Infrastructure.Data.Migrations
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(2000)");
 
-                    b.Property<decimal>("DiscountPercentage")
+                    b.Property<decimal?>("DiscountPercentage")
                         .HasPrecision(5, 2)
                         .HasColumnType("decimal(5,2)");
 
