@@ -16,6 +16,12 @@ namespace GenZCoders.Infrastructure.Repositories
         {
         }
 
+        public async Task<AcademyProgram?> GetAcademyProgramByIdAsync(int id)
+        {
+            return await _context.AcademyPrograms
+                .FirstOrDefaultAsync(a => a.Id == id);
+        }
+
         public async Task<IEnumerable<AcademyProgram>> GetAllAcademyProgramsAsync()
         {
             return await _context.AcademyPrograms.Include(x => x.Courses).ToListAsync();

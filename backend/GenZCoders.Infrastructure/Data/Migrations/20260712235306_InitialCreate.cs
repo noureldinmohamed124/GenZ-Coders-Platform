@@ -23,6 +23,7 @@ namespace GenZCoders.Infrastructure.Data.Migrations
                     AgeTo = table.Column<int>(type: "int", nullable: false),
                     DisplayOrder = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
                     IsPublished = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    ThumbnailUrl = table.Column<string>(type: "varchar(500)", unicode: false, maxLength: 500, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -66,7 +67,7 @@ namespace GenZCoders.Infrastructure.Data.Migrations
                     Title = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
                     Price = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: false),
-                    DiscountPercentage = table.Column<decimal>(type: "decimal(5,2)", precision: 5, scale: 2, nullable: false),
+                    DiscountPercentage = table.Column<decimal>(type: "decimal(5,2)", precision: 5, scale: 2, nullable: true),
                     FinalPrice = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: false),
                     DurationWeeks = table.Column<int>(type: "int", nullable: false),
                     CoreSessionsCount = table.Column<int>(type: "int", nullable: false),

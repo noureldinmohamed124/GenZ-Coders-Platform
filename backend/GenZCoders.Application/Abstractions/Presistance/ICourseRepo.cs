@@ -10,5 +10,6 @@ namespace GenZCoders.Application.Abstractions.Presistance
     public interface ICourseRepo : IGenericRepo<Course>
     {
         Task<Course?> GetCourseByIdWithProgramAsync(int id);
+        Task<IEnumerable<Course>> GetAllPublishedCoursesByProgramIdAsync(int programId);
     }
 }

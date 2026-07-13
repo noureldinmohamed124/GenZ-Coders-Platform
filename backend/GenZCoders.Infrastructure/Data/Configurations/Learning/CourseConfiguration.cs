@@ -35,6 +35,7 @@ namespace GenZCoders.Infrastructure.Data.Configurations.Learning
                 .HasPrecision(10, 2);
 
             builder.Property(x => x.DiscountPercentage)
+                .IsRequired(false)
                 .HasPrecision(5, 2);
 
             builder.Property(x => x.FinalPrice)

@@ -39,7 +39,7 @@ namespace GenZCoders.Application.Modules.EnrollmentApplications.Commands.CreateE
             if (course.Status != CourseStatus.Published)
                 throw new BusinessRuleException("Course is not available.");
 
-            if (course.RequiresLaptop && !command.HasLaptopConfirmation)
+            if (course.RequiresLaptop == true && command.HasLaptopConfirmation == false)
                 throw new BadRequestException("You must confirm that you have a laptop to enroll in this course.");
 
 

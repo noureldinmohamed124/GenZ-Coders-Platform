@@ -1,5 +1,6 @@
 ﻿using GenZCoders.API.Middlewares;
 using GenZCoders.Application.Modules.AcademyPrograms.Queries.GetAllAcademyPrograms;
+using GenZCoders.Application.Modules.Courses.Queries.GetAllCoursesByProgram;
 using GenZCoders.Application.Modules.EnrollmentApplications.Commands.CreateEnrollmentApplication;
 using GenZCoders.Infrastructure;
 using GenZCoders.Infrastructure.Data;
@@ -18,7 +19,7 @@ builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, relo
 
 
 
-// Repositories
+// Infrastructure (Repositories, File Storage, JWT Implementation)
 builder.Services.AddInfrastructure(builder.Configuration);
 
 
@@ -26,6 +27,7 @@ builder.Services.AddInfrastructure(builder.Configuration);
 // Use Cases
 builder.Services.AddScoped<CreateEnrollmentApplicationUseCase>();
 builder.Services.AddScoped<GetAllAcademyProgramsUseCase>();
+builder.Services.AddScoped<GetAllCoursesByProgramUseCase>();
 
 
 // 5. JWT Configurations
@@ -92,4 +94,6 @@ app.Run();
 
     Install-Package Microsoft.EntityFrameworkCore.Design -Version 8.0.20 (Api)
  
+
+    Add-Migration InitialCreate -OutputDir Data/Migrations
 */
