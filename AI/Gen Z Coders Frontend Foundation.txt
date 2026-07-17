@@ -1,0 +1,688 @@
+# Gen Z Coders Frontend Foundation
+
+### Version 1.0
+
+---
+
+# 1. Product Overview
+
+## Product Name
+
+**Gen Z Coders**
+
+---
+
+## Product Description
+
+Gen Z Coders is a modern, project-based programming learning hub that transforms students from technology consumers into technology creators through structured learning journeys, real-world projects, engineering mentorship, and measurable progress.
+
+Unlike traditional coding centers, Gen Z Coders focuses on building a **Creator Mindset**, where programming is treated as a tool for solving problems, creating products, and thinking like an engineer rather than simply memorizing concepts.
+
+---
+
+## Brand Slogan
+
+> **From Consumer To Creator**
+> 
+
+---
+
+## Vision
+
+To become Egypt's leading Creator Mindset academy — the trusted destination for parents, students, and schools seeking practical programming education that develops the ability to build, launch, and lead.
+
+---
+
+## Mission
+
+Equip students aged 8 through university level with the technical skills, engineering mindset, and creative confidence needed to move from consuming technology to creating with it through project-based learning, coaching, and measurable outcomes.
+
+---
+
+## Core Philosophy
+
+Programming is **not** the product.
+
+Programming is the tool.
+
+The real product is the **Creator Mindset**.
+
+Every feature, page, workflow, and learning experience should reinforce this philosophy.
+
+---
+
+## Core Principle
+
+Before implementing any feature, ask:
+
+> **Does this help students use knowledge to build something meaningful?**
+> 
+
+If the answer is yes, it aligns with the Gen Z Coders philosophy.
+
+---
+
+# 2. Brand Identity
+
+## Brand Personality
+
+- Modern
+- Premium
+- Engineering-first
+- Practical
+- Trustworthy
+- Calm
+- Youth-focused
+- Mentor-like
+- Results-driven
+
+---
+
+## Brand Tone
+
+- Confident
+- Technical
+- Friendly
+- Helpful
+- Professional
+- Encouraging
+- Never exaggerated
+- Never overly corporate
+
+---
+
+## Communication Philosophy
+
+Never sell courses.
+
+Sell:
+
+- Transformation
+- Confidence
+- Real projects
+- Problem solving
+- Creativity
+- Engineering thinking
+- Portfolio building
+- Future opportunities
+
+---
+
+## Trust Builders
+
+Always emphasize:
+
+- Real projects
+- Creator Coaching
+- Creator Card
+- Engineering instructors
+- Student outcomes
+- Practical learning
+- Portfolio development
+
+---
+
+# 3. Target Audience
+
+## Kids Programming
+
+Age:
+
+8–12
+
+Goal:
+
+Build curiosity, confidence, creativity, and logical thinking.
+
+---
+
+## School Programming
+
+Audience:
+
+Egyptian Baccalaureate students.
+
+Goal:
+
+Master programming concepts through understanding and practical application while improving academic performance.
+
+---
+
+## Professional Programming
+
+Audience:
+
+University students and career changers.
+
+Goal:
+
+Develop job-ready technical skills and professional portfolios.
+
+---
+
+## Secondary Audience
+
+Parents making educational decisions.
+
+The platform should appeal to:
+
+Students emotionally.
+
+Parents logically.
+
+---
+
+# 4. Business Objectives
+
+The platform should optimize for:
+
+- Building trust
+- Student registrations
+- Consultation requests
+- Presenting programs clearly
+- Showcasing real outcomes
+- Supporting long-term student journeys
+- Strengthening the Gen Z Coders brand
+
+---
+
+# 5. Technical Stack
+
+## Frontend
+
+- React 19
+- Vite
+- TypeScript
+- React Router
+- Tailwind CSS
+- Axios
+- React Hook Form
+- Zod
+- TanStack Query
+- Framer Motion
+- Lucide React
+- React Hot Toast
+- React Helmet Async
+- Recharts
+
+---
+
+## Backend
+
+ASP.NET Core 8 Web API
+
+---
+
+## Database
+
+SQL Server
+
+---
+
+## Hosting
+
+Frontend:
+
+Vercel
+
+Backend:
+
+ASPMonster
+
+Future deployment may move to dedicated production infrastructure.
+
+---
+
+# 6. Authentication Strategy
+
+Current Version
+
+No authentication.
+
+Future Versions
+
+- JWT Authentication
+- Refresh Tokens
+- Role-Based Authorization
+- HttpOnly Cookies (preferred if adopted in backend)
+- Access Token + Refresh Token architecture
+
+Roles will eventually include:
+
+- Student
+- Parent
+- Instructor
+- Technical Support
+- Admin
+- Board Admin
+
+---
+
+# 7. Design Philosophy
+
+Overall Experience
+
+> **A premium, modern, engineering-first learning platform that feels trustworthy, calm, and easy to use.**
+> 
+
+---
+
+## Design Inspiration
+
+- 50% Stripe
+- 30% Apple
+- 20% Framer
+
+The website should feel closer to a modern SaaS or technology company than a traditional educational platform.
+
+---
+
+## Design Principles
+
+- Minimal
+- Clean
+- Premium
+- Spacious
+- Highly readable
+- Calm
+- Trustworthy
+- Conversion-focused
+- Engineering-inspired
+
+Avoid:
+
+- Visual clutter
+- Excessive decorations
+- Overly playful interfaces
+- Generic educational designs
+
+---
+
+# 8. Color System
+
+## Primary
+
+```
+#FF1A1A
+```
+
+Primary Hover
+
+```
+#E60000
+```
+
+Primary Light
+
+```
+#FFE8E8
+```
+
+Background
+
+```
+#FFFFFF
+```
+
+Surface
+
+```
+#FAFAFA
+```
+
+Card
+
+```
+#FFFFFF
+```
+
+Border
+
+```
+#E5E7EB
+```
+
+Text Primary
+
+```
+#111111
+```
+
+Text Secondary
+
+```
+#6B7280
+```
+
+Success
+
+```
+#16A34A
+```
+
+Warning
+
+```
+#F59E0B
+```
+
+Error
+
+```
+#DC2626
+```
+
+Info
+
+```
+#2563EB
+```
+
+---
+
+# 9. Typography
+
+Primary Font
+
+Plus Jakarta Sans
+
+Weights
+
+- 400
+- 500
+- 600
+- 700
+- 800
+
+Typography should prioritize readability and hierarchy over decorative styling.
+
+---
+
+# 10. Corner Radius
+
+Standard Radius
+
+16px
+
+---
+
+# 11. Shadows
+
+Soft, subtle shadows.
+
+No heavy elevation.
+
+---
+
+# 12. Motion System
+
+Animation Level
+
+Medium
+
+Animations should support usability rather than attract attention.
+
+Preferred animations
+
+- Fade
+- Slide
+- Scale
+- Staggered reveals
+
+Avoid
+
+- Bounce
+- Rotation
+- Long animations
+- Excessive parallax
+
+Framer Motion should only be used where it improves the user experience.
+
+---
+
+# 13. Glassmorphism
+
+Not used.
+
+---
+
+# 14. Gradients
+
+Allowed only when subtle.
+
+Used sparingly to enhance premium appearance.
+
+---
+
+# 15. Illustrations & Images
+
+Priority 1
+
+- Real students
+- Real classrooms
+- Real projects
+
+Priority 2
+
+- Product screenshots
+- Robots
+- Scratch projects
+- Coding visuals
+
+Priority 3
+
+- High-quality AI-generated artwork
+
+Avoid
+
+- Generic stock photos
+- Fake office environments
+- Cliché laptop images
+
+---
+
+# 16. Responsive Strategy
+
+Mobile First
+
+Desktop and tablet layouts should progressively enhance the mobile experience.
+
+---
+
+# 17. Accessibility
+
+The platform should follow WCAG AA standards where practical.
+
+Requirements
+
+- Keyboard navigation
+- Semantic HTML
+- Screen reader support
+- Proper labels
+- Visible focus states
+- Accessible color contrast
+- Meaningful alt text
+
+---
+
+# 18. Component Philosophy
+
+Components should be highly reusable.
+
+Examples
+
+- Button
+- Input
+- TextArea
+- Select
+- Card
+- Modal
+- Drawer
+- Stepper
+- Badge
+- Accordion
+- ProgramCard
+- CourseCard
+- SectionTitle
+- Timeline
+- EmptyState
+- LoadingState
+
+Favor composition over duplication.
+
+---
+
+# 19. Frontend Architecture
+
+Feature-based architecture.
+
+```
+src
+│
+├── app
+│   ├── router
+│   ├── providers
+│   ├── layouts
+│   └── config
+│
+├── assets
+│
+├── components
+│   ├── ui
+│   ├── common
+│   └── layout
+│
+├── features
+│   ├── landing
+│   ├── registration
+│   ├── consultation
+│   ├── programs
+│   └── shared
+│
+├── hooks
+│
+├── services
+│
+├── types
+│
+├── utils
+│
+├── constants
+│
+└── styles
+```
+
+---
+
+# 20. Coding Standards
+
+- Functional Components only
+- Strict TypeScript
+- ESLint
+- Prettier
+- Tailwind CSS only
+- Absolute Imports
+- Path Aliases
+- No inline styles
+- Reusable custom hooks
+- Composition over inheritance
+- No duplicated logic
+- Lazy loading where appropriate
+- Error Boundaries
+- Loading states
+- Empty states
+- Proper error handling
+
+---
+
+# 21. State Management
+
+Server State
+
+TanStack Query
+
+Forms
+
+React Hook Form + Zod
+
+Local UI State
+
+React hooks
+
+Avoid introducing global state libraries unless a future requirement justifies them.
+
+---
+
+# 22. API Strategy
+
+Use the real backend API whenever available.
+
+Mocked JSON may be used temporarily during frontend development but should be replaced with real endpoints as soon as they exist.
+
+The frontend should be built with integration in mind from the beginning.
+
+---
+
+# 23. Icon System
+
+Use **Lucide React** exclusively.
+
+Do not mix multiple icon libraries.
+
+---
+
+# 24. SEO
+
+Use React Helmet Async for:
+
+- Page titles
+- Meta descriptions
+- Open Graph tags
+- Twitter cards
+- Canonical URLs
+
+Every public page should include appropriate SEO metadata.
+
+---
+
+# 25. Long-Term Vision
+
+The architecture should be scalable enough to support future modules without requiring major restructuring.
+
+Planned future modules include:
+
+- Landing Page
+- Program Explorer
+- Registration
+- Consultation Booking
+- Authentication
+- Student Dashboard
+- Parent Dashboard
+- Instructor Dashboard
+- Admin Dashboard
+- Program Management
+- Course Management
+- Enrollment Management
+- Attendance
+- Assignments
+- Quizzes
+- Student Performance
+- Creator Card
+- Creator Coaching
+- Certificates
+- Notifications
+- Reports
+- Analytics
+- Profile Management
+- Payment Management
+
+---
+
+# 26. Guiding Principle for Future Development
+
+Every feature should satisfy four questions before implementation:
+
+1. **Does it reinforce the Creator Mindset philosophy?**
+2. **Does it improve trust for students and parents?**
+3. **Does it provide measurable value rather than unnecessary complexity?**
+4. **Can it scale with the long-term vision of Gen Z Coders without requiring architectural redesign?**
